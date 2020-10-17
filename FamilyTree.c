@@ -8,12 +8,12 @@
 typedef struct node *family_node;
 
 struct node {
-	int id;						// Unique id
-    char name[SIZE];			// Name
-    char lifeStatus;			// 'A' (Alive) or 'D' (Dead)
+    int id;			// Unique id
+    char name[SIZE];		// Name
+    char lifeStatus;		// 'A' (Alive) or 'D' (Dead)
     int age;                    // Age
     family_node parents[2]; 	// pointers to parents
-    family_node partner; 		// pointer to partner
+    family_node partner; 	// pointer to partner
     family_node children[5]; 	// pointers to children
     family_node prev;           //pointer to previous node
     family_node next;           //pointer to next node
